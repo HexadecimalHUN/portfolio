@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background: rgb(19,27,43);
+    background: linear-gradient(90deg, rgba(19,27,43,1) 0%, rgba(29,52,78,1) 100%); 
+}
+
+.container{
+    display: block;
+    position: relative;
+}
+
+.left-container{
+    max-width: 35%;
+    padding-right: 1rem;
+    position: sticky;
+    top: 25%;
+
+}
+
+.right-container{
+    max-width: 55%;
+    width: 65%;
+    padding-left: 1rem;
+    overflow-y: auto;
+    justify-content: flex-end;
+    
+}
+
+.right-container-wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin-top: -8em;
+}
+
+.experience-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.project-container:hover{
+    background-color: #adadad3d;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.project-container:hover .project-year{
+    color: #bebebe;
+    transition: 0.5s;
+}
+
+.project-container:hover .project-desc{
+    color: #bebebe;
+    transition: 0.5s;
+}
+
+
+.project-container:hover .project-title{
+    color: #db5400;
+    transition: 0.5s;
+}
+
+.experience-container:hover{
+    background-color: #adadad3d;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.experience-container:hover .experience-month {
+    color: #bebebe;
+    transition: 0.5s;
+}
+
+.experience-container:hover .experience-desc{
+    color: #e2e2e2;
+    transition: 0.5s;
+}
+
+
+.experience-container:hover .experience-title{
+    color: #4d84eb;
+    transition: 0.5s;
+}
+.experience-card-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.tech-stack{
+    display:flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-tech{
+    border: 1px solid #d5d5d5a9;
+    border-radius: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 0px 0px 2px 0px #c4c4c47b;
+    background: rgb(57,85,112);
+    background: linear-gradient(90deg, rgba(57,85,112,0.68) 0%, rgba(52,100,156,0.68) 100%);
+    flex-wrap: wrap;
+}
+
+
