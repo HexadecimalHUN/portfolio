@@ -48,7 +48,8 @@ const ContactForm: React.FC = () => {
 
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='contactform'>
+    
+    <form onSubmit={handleSubmit(onSubmit)} className='contactform' id = "contact">
         <div className="contact-container flex flex-col">
             <div className="contact-header flex flex-col">
                 <div className="contact-title font-bold text-lg text-slate-200 mt-10">Contact</div>
